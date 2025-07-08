@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="flex h-screen bg-gray-200">
+    <div class="flex flex-col bg-blue-600 w-64 p-4 text-white space-y-10">
+        <h1 class="text-2xl font-bold"><span class="text-4xl">⊞</span> Dashboard</h1>
+
+        <div class="flex flex-col space-y-4 font-bold">
+            <a href="#" class="text-xl flex items-center gap-4 hover:underline group"><span class="group-hover:no-underline">🏠</span>Home</a>
+            <a href="#" class="text-xl flex items-center gap-4 hover:underline group"><span class="group-hover:no-underline">👤</span>Profile</a>
+            <a href="#" class="text-xl flex items-center gap-4 hover:underline group"><span class="group-hover:no-underline">⏰</span>History</a>
+        </div>
+
+        <div class="space-y-4 font-bold">
+            <a href="#" class="text-xl flex items-center gap-4 hover:underline"><span>⚙️</span>Settings</a>
+            <a href="#" class="text-xl flex items-center gap-4 hover:underline"><span>🔒</span>Privacy</a>
+        </div>
+    </div>
+
+    <div class="flex-1 flex flex-col">
+        <div class="flex flex-col w-full bg-white">
+            <div class="p-6 flex justify-between items-center w-full">
+                <div class="flex gap-4 items-center">
+                    <a href="#" class="text-3xl">⌕</a>
+                    <input class="bg-gray-600 w-200 h-10 rounded-full text-white p-4" type="text" placeholder="Search">
+                </div>
+
+                <div class="flex gap-4 items-center">
+                    <p class="text-2xl">🔔</p>
+                    <p class="font-bold text-black text-xl">Jangkarbumi</p>
+                    <img src="../img/madaraa.jpeg" alt="profile-picture" class="w-12 h-12 rounded-full object-cover object-top">
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 flex justify-between items-center bg-white">
+            <div class="flex items-center gap-6">
+                <img src="../img/madaraa.jpeg" alt="profile-picture" class="w-24 h-24 rounded-full object-cover object-top">
+                <div>
+                    <p>Hi There!</p>
+                    <p class="font-bold text-xl">Jangkarbumi</p>
+                </div>
+            </div>
+
+            <div class="flex gap-6">
+                <button class="bg-blue-600 hover:bg-blue-500 active:bg-blue-400 text-white pt-2 pb-2 pr-9 pl-9 font-bold rounded-3xl cursor-pointer">Add</button>
+                <button class="bg-blue-600 hover:bg-blue-500 active:bg-blue-400 text-white pt-2 pb-2 pr-9 pl-9 font-bold rounded-3xl cursor-pointer">Remove</button>
+                <button class="bg-blue-600 hover:bg-blue-500 active:bg-blue-400 text-white pt-2 pb-2 pr-9 pl-9 font-bold rounded-3xl cursor-pointer">Share</button>
+            </div>
+        </div>
+
+
+        <div class="grid grid-cols-4 grid-rows-4 flex-1 p-6 gap-4">
+            <div class="bg-white col-start-1 col-end-3 row-start-1 row-end-3 gap-4 space-y-10">
+                <h2 class="font-bold p-4 text-3xl">General Info</h2>
+                <div class="flex flex-row justify-between">
+                    <div class="space-y-5">
+                        <p class="font-bold pl-4 text-xl text-green-500">Monthly Gained: </p>
+                        <p class="font-bold pl-4 text-2xl text-green-500">+Rp. 8.763.000,00</p>
+                    </div>
+                    <div class="space-y-5">
+                        <p class="font-bold pr-4 text-red-500 text-xl">Monthly Spend:</p>
+                        <p class="font-bold pr-4 text-red-500 text-2xl">-Rp. 3.500.000,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white col-start-3 row-start-1 row-end-3 space-y-5 gap-4">
+                <h2 class="font-bold text-3xl p-4">New Customer:</h2>
+                <div class="space-y-5">
+                    <p class="font-bold pl-4 text-xl">👤</p>
+                    <p class="font-bold pl-4 text-xl text-green-500">+219</p>
+                </div>
+            </div>
+            <div class="bg-white col-start-4 col-end-5 row-start-1 row-end-5 space-y-5 gap-4 flex flex-col items-center">
+                <h2 class="font-bold text-3xl p-4">Announcement</h2>
+                <p class="font-semibold text-xl">There is no announcement yet!</p>
+            </div>
+            <div class="bg-white col-start-1 col-end-2 row-start-3 row-end-5 space-y-5 gap-4 items-center justify-center">
+                <h2 class="font-bold text-3xl p-4">Highest Selling:</h2>
+                <div class="space-y-5">
+                    <p class="font-bold pl-4 text-xl">Tracking Pole</p>
+                    <p class="font-bold pl-4 text-xl text-green-500">+Rp. 4.738.000,00</p>
+                </div>
+            </div>
+            <div class="bg-white col-start-2 col-end-3 row-start-3 row-end-5 space-y-5 gap-4">
+                <h2 class="font-bold text-3xl p-4">Lowest Selling:</h2>
+                <div class="space-y-5">
+                    <p class="font-bold pl-4 text-xl">Hand Gloves</p>
+                    <p class="font-bold pl-4 text-xl text-green-500">+Rp. 377.000,00</p>
+                </div>
+            </div>
+            <div class="bg-white row-span-2 space-y-5 gap-4 flex flex-col justify-center items-center">
+                <h2 class="font-bold text-3xl p-4">Items Stock</h2>
+                <a href="#" class="bg-blue-600 hover:bg-blue-500 active:bg-blue-400 text-white pt-2 pb-2 pr-9 pl-9 font-bold rounded-3xl cursor-pointer">Warehouse</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
